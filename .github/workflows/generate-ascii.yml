@@ -14,9 +14,10 @@ jobs:
       - name: List Files Before Run
         run: ls -ltra
 
-      - name: Run Script
-        run: ./ascii-script.sh
-    
+      - name: Make Script Executable and Run
+        run: |
+          chmod +x ascii-script.sh
+          ./ascii-script.sh
       
     
 
