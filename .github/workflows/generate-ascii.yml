@@ -6,15 +6,11 @@ jobs:
   steps:
     - name: checkout repo
       uses: actions/checkout@v4
-    - name: install cowsay
-      run: sudo apt-get update && sudo apt-get install -y cowsay
-    - name: Execute cowsay
-      run: cowsay -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt
-    - name: verify output
-      run: grep -i "dragon" dragon.txt
-    - name: display art work
-      run: cat dragon.txt
-   
+    - name: list files before run
+      run: ls -ltra
+    - name: Run Script
+      run: ./ascii-script.sh
+    
       
     
 
