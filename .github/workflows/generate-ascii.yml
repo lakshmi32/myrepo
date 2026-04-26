@@ -9,7 +9,7 @@ jobs:
     - name: list files before run
       run: ls -ltra
     - name: Run Script
-      run: ./ascii-script.sh
+      run: ./ascii.sh
     
       
     
