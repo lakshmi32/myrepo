@@ -15,7 +15,7 @@ jobs:
     - name: display art work
       run: cat dragon.txt
     - name: List Repository files
-      run: ls -ltra
+      
     
 
 
